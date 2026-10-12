@@ -5,7 +5,7 @@
 <h1>Sparkshelf Privacy Policy</h1>
 <p class="muted">Effective 10 October 2026 · App: Sparkshelf (com.sparkshelf.app) · Published by BingoWorks · Contact: <a href="mailto:sparkshelfapp@gmail.com">sparkshelfapp@gmail.com</a></p>
 
-<div class="box"><strong>In short.</strong> Sparkshelf keeps your reading library on your phone. If you choose to sign in, a copy of your library details is stored in your private cloud account so it can sync between your devices. Article text and your API keys never leave your phone for our servers. Sparkshelf has no analytics, no crash-reporting service and no advertising, and we do not sell your data.</div>
+<div class="box"><strong>In short.</strong> Sparkshelf keeps your reading library on your phone. If you choose to sign in, a copy of your library details is stored in your private cloud account so it can sync between your devices. Article text is sent to our server only when you tap Summarize with the optional built-in AI (section 3), and never for sync; your API keys never leave your phone for our servers. Sparkshelf has no analytics, no crash-reporting service and no advertising, and we do not sell your data.</div>
 
 <h2 id="on-device">1. What stays on your phone</h2>
 <ul>
@@ -24,15 +24,24 @@
 <li>your AI summaries;</li>
 <li>your news topics and the RSS feed addresses you added.</li>
 </ul>
-<p><strong>Never uploaded:</strong> article text, downloaded pictures, your API keys, and your settings. Google processes this data for us as a service provider under its own <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a> and <a href="https://policies.google.com/privacy">Privacy Policy</a>. We use it only to provide sync.</p>
+<p><strong>Never uploaded for sync:</strong> article text, downloaded pictures, your API keys, and your settings. Google processes this data for us as a service provider under its own <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a> and <a href="https://policies.google.com/privacy">Privacy Policy</a>. We use it only to provide sync.</p>
 
 <h2 id="services">3. Services you connect yourself</h2>
-<p>Some features send content to a third-party service that <strong>you</strong> choose, <strong>only when you use them</strong> and <strong>only with an API key you enter yourself</strong>. This content goes <strong>directly from your phone to that provider. It is not sent to us, and we never receive, see or store it.</strong></p>
+<p>Some features send content to a third-party service that <strong>you</strong> choose, <strong>only when you use them</strong> and <strong>only with an API key you enter yourself</strong>. This content goes <strong>directly from your phone to that provider. It is not sent to us, and we never receive, see or store it.</strong> (The optional built-in AI below is the one exception.)</p>
 <table>
 <tr><th>Feature</th><th>What is sent</th><th>Sent to (the provider you choose, not to us)</th></tr>
 <tr><td>Summarize</td><td>The article's title and text</td><td>The provider you pick: Anthropic, OpenAI, Google (Gemini), or a compatible service whose address you enter</td></tr>
 <tr><td>Read aloud with a cloud voice</td><td>The text being read</td><td>Google (Gemini), OpenAI or ElevenLabs, whichever voice you choose</td></tr>
 </table>
+<h3 id="builtin">The built-in AI (optional, needs sign-in)</h3>
+<p>Instead of your own key you can use Sparkshelf's built-in AI for a few free summaries a day. It is off until you agree to it the first time you tap Summarize, and you can switch back to your own key in Settings at any time.</p>
+<ul>
+<li><strong>What is sent:</strong> when you tap Summarize, the article's title and text (up to about 60,000 characters) are sent over an encrypted connection to a Sparkshelf server function on Google Cloud (United States). It passes them to Google's Gemini model, also on Google Cloud, which writes the summary, and the summary is returned to your phone.</li>
+<li><strong>What we keep:</strong> we do not store the article text or the summary on our server; they are processed in memory to answer your request. We keep a counter per account for the day (your anonymous account id, the date and how many summaries you used) to apply the daily limit. Our server logs record a shortened, scrambled form of your account id, the size of the text and the counts, never the text itself. Counters are deleted when you delete your account.</li>
+<li><strong>Who else sees it:</strong> Google processes the text on our behalf under its <a href="https://cloud.google.com/terms/data-processing-addendum">Google Cloud data processing terms</a>. We do not sell it or use it for advertising.</li>
+<li><strong>Why sign-in:</strong> it lets us apply the daily limit to each person. Your Google account is used only for that.</li>
+<li><strong>Genuine-app check:</strong> to make sure a request comes from the real app installed from Google Play, the app asks Google Play (Play Integrity) for a token and sends it with the request. Google receives app and device integrity information for that purpose, under its own privacy policy.</li>
+</ul>
 <p>Your key and the content go only to that provider. The provider's own terms and privacy policy apply, and you may be billed by them for your usage. The phone's built-in voice works entirely on the phone. The "Ask Gemini" shortcut hands the article text to the Gemini app installed on your phone, which is then governed by Google's terms. You can remove a key at any time in Settings.</p>
 
 <h2 id="web">4. Websites and feeds the app contacts</h2>
