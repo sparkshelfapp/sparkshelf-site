@@ -9,9 +9,9 @@
 
 <h2 id="on-device">1. What stays on your phone</h2>
 <ul>
-<li>The articles you save (link, title, the downloaded article text and pictures for offline reading), your tags, favourites, archive and read marks, reading progress, and the AI summaries you generate.</li>
+<li>The articles you save (link, title, the downloaded article text and pictures for offline reading), your tags, favourites, archive and read marks, reading progress, the passages you highlight and any notes you write on them, and the AI summaries you generate.</li>
 <li>Your settings (appearance, reminders, reading and voice options, app lock choice).</li>
-<li>Your API keys for AI services, if you add any. They are stored encrypted with the Android Keystore, only on this phone.</li>
+<li>Your API keys for AI services, if you add any. They are stored encrypted with the Android Keystore, only on this phone. If you choose to include them in a backup file, they are written into that file, which is then encrypted with a password you set. We never receive that file.</li>
 </ul>
 <p>This data is deleted when you uninstall the app or clear its data. Android's automatic backup is configured to exclude your API keys and your sign-in/sync state.</p>
 
@@ -20,6 +20,7 @@
 <p>When you are signed in, the following is stored in <strong>Cloud Firestore (Google Cloud)</strong>, in a space only your account can read and write:</p>
 <ul>
 <li>the links and titles of your saved articles, their tags, favourite/archive/read marks and reading progress;</li>
+<li>your highlights and notes (the highlighted passage, its colour and your note);</li>
 <li>your AI summaries;</li>
 <li>your news topics and the RSS feed addresses you added.</li>
 </ul>
@@ -39,6 +40,7 @@
 <li>When you save a link, the app downloads that page from its website to extract the article. That website can see your phone's IP address and standard request details, like any browser visit.</li>
 <li>The News tab downloads RSS/Atom feeds from the news sources listed in Settings and from feed addresses you add, and loads article thumbnails from those sites. Only each feed's own title, short snippet, tags and link are shown.</li>
 <li>Opening an article from News fetches that page in the same way, and it is kept on your phone for up to 30 days so it opens faster offline.</li>
+<li>Some links need special handling. A YouTube video link asks YouTube for the video's title, thumbnail and captions, which become the saved transcript, and the transcript language you pick in the reader is requested from YouTube the same way. Links to Reddit posts, ChatGPT shared chats and public Facebook posts are opened once in a hidden browser inside the app, only when you share that link, so the post's own text and pictures can be saved. The sites see the request as they would from any browser. Nothing is sent to us.</li>
 </ul>
 
 <h2 id="permissions">5. Permissions</h2>
@@ -59,7 +61,7 @@
 <h2 id="deletion">7. Your choices, access and deletion</h2>
 <ul>
 <li><strong>Delete your account and cloud data:</strong> Settings → Account → "Delete my account and cloud data". This removes everything stored in the cloud for you and deletes your sign-in account. Your articles remain on the phone. You can also request deletion by email (see <a href="delete-account.html">Delete your account</a>).</li>
-<li><strong>Export:</strong> Settings → Import &amp; backup → "Export a backup" saves your library details, tags and summaries to a file you control.</li>
+<li><strong>Export:</strong> Settings → Import &amp; backup → "Export a backup" saves a file with the parts you choose: your library details and tags, highlights, notes, summaries, settings, reading stats and, only if you tick it, your API keys (which requires a password that encrypts the whole file) you control.</li>
 <li><strong>Sign out</strong> at any time; your phone keeps its local copy.</li>
 <li>Depending on where you live (for example under the EU/UK GDPR or California law) you may have rights to access, correct, delete or port your data, and to object or complain to a regulator. Use the in-app tools above or contact us.</li>
 </ul>
