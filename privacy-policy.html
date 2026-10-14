@@ -3,7 +3,7 @@
 <title>Sparkshelf Privacy Policy</title><link rel="stylesheet" href="style.css"></head>
 <body><main>
 <h1>Sparkshelf Privacy Policy</h1>
-<p class="muted">Effective 10 October 2026 · App: Sparkshelf (com.sparkshelf.app) · Published by MedPro Labs · Contact: <a href="mailto:sparkshelfapp@gmail.com">sparkshelfapp@gmail.com</a></p>
+<p class="muted">Effective 14 October 2026 · App: Sparkshelf (com.sparkshelf.app) · Published by MedPro Labs · Contact: <a href="mailto:sparkshelfapp@gmail.com">sparkshelfapp@gmail.com</a></p>
 
 <div class="box"><strong>In short.</strong> Sparkshelf keeps your reading library on your phone. If you choose to sign in, a copy of your library details is stored in your private cloud account so it can sync between your devices. Article text is sent to our server only when you tap Summarize with the optional built-in AI (section 3), and never for sync; your API keys never leave your phone for our servers. Sparkshelf has no analytics, no crash-reporting service and no advertising, and we do not sell your data.</div>
 
@@ -16,7 +16,7 @@
 <p>This data is deleted when you uninstall the app or clear its data. Android's automatic backup is configured to exclude your API keys and your sign-in/sync state.</p>
 
 <h2 id="account">2. If you sign in (optional)</h2>
-<p>Signing in is optional and only needed for syncing. We use <strong>Google Sign-In through Firebase Authentication</strong> (Google LLC). We receive your Google account's name, email address, a unique account ID and your profile-picture address. The picture is loaded from Google each time it is shown and is not stored by us.</p>
+<p>Signing in is optional for saving and reading articles. It is required for cloud sync and the optional built-in AI. We use <strong>Google Sign-In through Firebase Authentication</strong> (Google LLC). We receive your Google account's name, email address, a unique account ID and your profile-picture address. The picture is loaded from Google each time it is shown and is not stored by us.</p>
 <p>When you are signed in, the following is stored in <strong>Cloud Firestore (Google Cloud)</strong>, in a space only your account can read and write:</p>
 <ul>
 <li>the links and titles of your saved articles, their tags, favourite/archive/read marks and reading progress;</li>
@@ -37,7 +37,7 @@
 <p>Instead of your own key you can use Sparkshelf's built-in AI for a few free summaries a day. It is off until you agree to it the first time you tap Summarize, and you can switch back to your own key in Settings at any time.</p>
 <ul>
 <li><strong>What is sent:</strong> when you tap Summarize, the article's title and text (up to about 60,000 characters) are sent over an encrypted connection to a Sparkshelf server function on Google Cloud (United States). It passes them to Google's Gemini model, also on Google Cloud, which writes the summary, and the summary is returned to your phone.</li>
-<li><strong>What we keep:</strong> we do not store the article text or the summary on our server; they are processed in memory to answer your request. We keep a counter per account for the day (your anonymous account id, the date and how many summaries you used) to apply the daily limit. Our server logs record a shortened, scrambled form of your account id, the size of the text and the counts, never the text itself. Counters are deleted when you delete your account.</li>
+<li><strong>What we keep:</strong> our AI server function does not persist the article text or summary; it processes them in memory to answer your request. The returned summary is saved on your phone and can be synced to your private cloud account as described in section 2. We keep a counter per account for the day (your account ID, the date and how many summaries you used) to apply the daily limit. Our server logs record a shortened, scrambled form of your account id, the size of the text and the counts, never the text itself. Counters are deleted when you delete your account.</li>
 <li><strong>Who else sees it:</strong> Google processes the text on our behalf under its <a href="https://cloud.google.com/terms/data-processing-addendum">Google Cloud data processing terms</a>. We do not sell it or use it for advertising.</li>
 <li><strong>Why sign-in:</strong> it lets us apply the daily limit to each person. Your Google account is used only for that.</li>
 <li><strong>Genuine-app check:</strong> to make sure a request comes from the real app installed from Google Play, the app asks Google Play (Play Integrity) for a token and sends it with the request. Google receives app and device integrity information for that purpose, under its own privacy policy.</li>
@@ -47,8 +47,8 @@
 <h2 id="web">4. Websites and feeds the app contacts</h2>
 <ul>
 <li>When you save a link, the app downloads that page from its website to extract the article. That website can see your phone's IP address and standard request details, like any browser visit.</li>
-<li>The News tab downloads RSS/Atom feeds from the news sources listed in Settings and from feed addresses you add, and loads article thumbnails from those sites. Only each feed's own title, short snippet, tags and link are shown.</li>
-<li>Opening an article from News fetches that page in the same way, and it is kept on your phone for up to 30 days so it opens faster offline.</li>
+<li>The News tab downloads RSS/Atom feeds from enabled sources listed in Settings and from feed addresses you add. Depending on the app version and source, it displays feed-provided headlines, metadata, snippets, thumbnails and links. Available sources and their presentation can change between versions. The feed and image hosts receive the requests, including your IP address and standard request details.</li>
+<li>Depending on the app version and source, opening a News item either downloads the article into the app's reader or opens the original page in a browser tab. Articles downloaded for the News reader are cached on your phone for up to 30 days; this cache limit does not apply to articles you save in your library. Browser visits are governed by the publisher's own terms and privacy policy.</li>
 <li>Some links need special handling. A YouTube video link asks YouTube for the video's title, thumbnail and captions, which become the saved transcript, and the transcript language you pick in the reader is requested from YouTube the same way. Links to Reddit posts, ChatGPT shared chats and public Facebook posts are opened once in a hidden browser inside the app, only when you share that link, so the post's own text and pictures can be saved. The sites see the request as they would from any browser. Nothing is sent to us.</li>
 </ul>
 
