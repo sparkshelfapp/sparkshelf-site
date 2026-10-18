@@ -3,7 +3,7 @@
 <title>Sparkshelf Privacy Policy</title><link rel="stylesheet" href="style.css"></head>
 <body><main>
 <h1>Sparkshelf Privacy Policy</h1>
-<p class="muted">Effective 14 October 2026 · App: Sparkshelf (com.sparkshelf.app) · Published by MedPro Labs · Contact: <a href="mailto:sparkshelfapp@gmail.com">sparkshelfapp@gmail.com</a></p>
+<p class="muted">Effective 18 October 2026 · App: Sparkshelf (com.sparkshelf.app) · Published by MedPro Labs · Contact: <a href="mailto:sparkshelfapp@gmail.com">sparkshelfapp@gmail.com</a></p>
 
 <div class="box"><strong>In short.</strong> Sparkshelf keeps your reading library on your phone. If you choose to sign in, a copy of your library details is stored in your private cloud account so it can sync between your devices. Article text is sent to our server only when you tap Summarize with the optional built-in AI (section 3), and never for sync; your API keys never leave your phone for our servers. Sparkshelf has no analytics, no crash-reporting service and no advertising, and we do not sell your data.</div>
 
@@ -11,7 +11,9 @@
 <ul>
 <li>The articles you save (link, title, the downloaded article text and pictures for offline reading), your tags, favourites, archive and read marks, reading progress, the passages you highlight and any notes you write on them, and the AI summaries you generate.</li>
 <li>Your settings (appearance, reminders, reading and voice options, app lock choice).</li>
-<li>Your API keys for AI services, if you add any. They are stored encrypted with the Android Keystore, only on this phone. If you choose to include them in a backup file, they are written into that file, which is then encrypted with a password you set. We never receive that file.</li>
+<li>Your API keys for AI services, if you add any. They are stored encrypted with the Android Keystore, only on this phone. If you choose to include them in a backup file, they are written into that file, which is then encrypted with a password you set. We never receive that file. If you switch on <strong>API key sync</strong> (Settings → Account → What to sync, off by default), your keys are first encrypted on your phone with a sync passphrase that you choose, and only that encrypted data is stored in your cloud account; we and Google cannot read it, and we cannot recover the passphrase for you.</li>
+<li>PDF and EPUB files you import. They are copied into the app's private storage on your phone; they and their text are never uploaded or synced.</li>
+<li>Results from the AI workspaces (insights, fact-checks and chats about an article or document). These are stored on your phone and are not synced by us (Android's own device backup may include them). An insight you choose to save as a note is kept like your other highlights.</li>
 </ul>
 <p>This data is deleted when you uninstall the app or clear its data. Android's automatic backup is configured to exclude your API keys and your sign-in/sync state.</p>
 
@@ -20,19 +22,23 @@
 <p>When you are signed in, the following is stored in <strong>Cloud Firestore (Google Cloud)</strong>, in a space only your account can read and write:</p>
 <ul>
 <li>the links and titles of your saved articles, their tags, favourite/archive/read marks and reading progress;</li>
-<li>your highlights and notes (the highlighted passage, its colour and your note);</li>
+<li>your highlights and notes (the highlighted passage, its colour and your note), including those on imported PDF and EPUB files (the files themselves are never uploaded);</li>
 <li>your AI summaries;</li>
-<li>your news topics and the RSS feed addresses you added.</li>
+<li>your news topics, categories and the RSS feed addresses you added;</li>
+<li><strong>only if you switch them on</strong> (Settings → Account → What to sync): your app settings (appearance, reader, read aloud and reminder choices, AI provider and model choices, AI tools you switched on and wrote), and your API keys, which are encrypted on your phone with your own passphrase before upload.</li>
 </ul>
-<p><strong>Never uploaded for sync:</strong> article text, downloaded pictures, your API keys, and your settings. Google processes this data for us as a service provider under its own <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a> and <a href="https://policies.google.com/privacy">Privacy Policy</a>. We use it only to provide sync.</p>
+<p>You can switch each kind off at any time, and delete its cloud copy with "Remove from the cloud" in the same place.</p>
+<p><strong>Never uploaded for sync:</strong> article text, downloaded pictures, imported PDF and EPUB files, and your app lock. Your settings and API keys are uploaded only if you switch those on, and your API keys only in encrypted form. Google processes this data for us as a service provider under its own <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a> and <a href="https://policies.google.com/privacy">Privacy Policy</a>. We use it only to provide sync.</p>
 
 <h2 id="services">3. Services you connect yourself</h2>
 <p>Some features send content to a third-party service that <strong>you</strong> choose, <strong>only when you use them</strong> and <strong>only with an API key you enter yourself</strong>. This content goes <strong>directly from your phone to that provider. It is not sent to us, and we never receive, see or store it.</strong> (The optional built-in AI below is the one exception.)</p>
 <table>
 <tr><th>Feature</th><th>What is sent</th><th>Sent to (the provider you choose, not to us)</th></tr>
 <tr><td>Summarize</td><td>The article's title and text</td><td>The provider you pick: Anthropic, OpenAI, Google (Gemini), or a compatible service whose address you enter</td></tr>
+<tr><td>AI workspaces (insights, fact-check, chat with a document)</td><td>The title, the passages of the article or document selected for the request, your question and the earlier messages of that chat</td><td>The provider you pick (the same list as Summarize)</td></tr>
 <tr><td>Read aloud with a cloud voice</td><td>The text being read</td><td>Google (Gemini), OpenAI or ElevenLabs, whichever voice you choose</td></tr>
 </table>
+<p>If you switch on web search for a fact-check, the provider you chose may search the web to answer. When Google Search suggestions are shown, they are loaded from Google, which can see your IP address.</p>
 <h3 id="builtin">The built-in AI (optional, needs sign-in)</h3>
 <p>Instead of your own key you can use Sparkshelf's built-in AI for a few free summaries a day. It is off until you agree to it the first time you tap Summarize, and you can switch back to your own key in Settings at any time.</p>
 <ul>
@@ -49,6 +55,7 @@
 <li>When you save a link, the app downloads that page from its website to extract the article. That website can see your phone's IP address and standard request details, like any browser visit.</li>
 <li>The News tab downloads RSS/Atom feeds from the news sources listed in Settings and from feed addresses you add, and loads article thumbnails from those sites. Only each feed's own title, short snippet, tags and link are shown.</li>
 <li>Opening an article from News fetches that page in the same way, and it is kept on your phone for up to 30 days so it opens faster offline.</li>
+<li>When the app starts it asks our database (Google Firebase) for public announcements. No account information is sent; like any request, the server can see your IP address. The app also asks Google Play whether a newer version is available.</li>
 <li>Some links need special handling. A YouTube video link asks YouTube for the video's title, thumbnail and captions, which become the saved transcript, and the transcript language you pick in the reader is requested from YouTube the same way. Links to Reddit posts, ChatGPT shared chats and public Facebook posts are opened once in a hidden browser inside the app, only when you share that link, so the post's own text and pictures can be saved. The sites see the request as they would from any browser. Nothing is sent to us.</li>
 </ul>
 
