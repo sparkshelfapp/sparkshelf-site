@@ -5,17 +5,17 @@
 <h1>Sparkshelf Privacy Policy</h1>
 <p class="muted">Effective 18 October 2026 · App: Sparkshelf (com.sparkshelf.app) · Published by MedPro Labs · Contact: <a href="mailto:sparkshelfapp@gmail.com">sparkshelfapp@gmail.com</a></p>
 
-<div class="box"><strong>In short.</strong> Sparkshelf keeps your reading library on your phone. If you choose to sign in, a copy of your library details is stored in your private cloud account so it can sync between your devices. Article text is sent to our server only when you tap Summarize with the optional built-in AI (section 3), and never for sync; your API keys never leave your phone for our servers. Sparkshelf has no analytics, no crash-reporting service and no advertising, and we do not sell your data.</div>
+<div class="box"><strong>In short.</strong> Sparkshelf keeps your reading library on your phone. If you choose to sign in, a copy of your library details is stored in your private cloud account so it can sync between your devices. Article text is sent to our server only when you tap Summarize with the optional built-in AI (section 3), and never for sync. Your API keys stay on your phone; they leave it only if you switch on API key sync or add them to a backup file, and then only encrypted with a password or passphrase that only you know. Sparkshelf has no analytics, no crash-reporting service and no advertising, and we do not sell your data.</div>
 
 <h2 id="on-device">1. What stays on your phone</h2>
 <ul>
 <li>The articles you save (link, title, the downloaded article text and pictures for offline reading), your tags, favourites, archive and read marks, reading progress, the passages you highlight and any notes you write on them, and the AI summaries you generate.</li>
 <li>Your settings (appearance, reminders, reading and voice options, app lock choice).</li>
-<li>Your API keys for AI services, if you add any. They are stored encrypted with the Android Keystore, only on this phone. If you choose to include them in a backup file, they are written into that file, which is then encrypted with a password you set. We never receive that file. If you switch on <strong>API key sync</strong> (Settings → Account → What to sync, off by default), your keys are first encrypted on your phone with a sync passphrase that you choose, and only that encrypted data is stored in your cloud account; we and Google cannot read it, and we cannot recover the passphrase for you.</li>
+<li>Your API keys for AI services, if you add any. They are stored encrypted with the Android Keystore on this phone. If you choose to include them in a backup file, they are written into that file, which is then encrypted with a password you set. We never receive that file. If you switch on <strong>API key sync</strong> (Settings → Account → What to sync, off by default), your keys are first encrypted on your phone with a sync passphrase that you choose, and only that encrypted data is stored in your cloud account; we and Google cannot read it, and we cannot recover the passphrase for you.</li>
 <li>PDF and EPUB files you import. They are copied into the app's private storage on your phone; they and their text are never uploaded or synced.</li>
 <li>Results from the AI workspaces (insights, fact-checks and chats about an article or document). These are stored on your phone and are not synced by us (Android's own device backup may include them). An insight you choose to save as a note is kept like your other highlights.</li>
 </ul>
-<p>This data is deleted when you uninstall the app or clear its data. Android's automatic backup is configured to exclude your API keys and your sign-in/sync state.</p>
+<p>This data is deleted when you uninstall the app or clear its data. Android's automatic backup is configured to exclude your API keys, your sign-in and sync state, the app lock and the Obsidian folder.</p>
 
 <h2 id="account">2. If you sign in (optional)</h2>
 <p>Signing in is optional for saving and reading articles. It is required for cloud sync and the optional built-in AI. We use <strong>Google Sign-In or email and password through Firebase Authentication</strong> (Google LLC). With Google we receive your account's name, email address, a unique account ID and your profile-picture address. The picture is loaded from Google each time it is shown and is not stored by us. With email and password we receive your email address and a unique account ID; your <strong>password is handled only by Firebase Authentication, which stores it in hashed form. We never see or store it</strong>, and it is never written to the app's logs or backups. A new email account must confirm its address through a link we send before it can sync, and the same email address is always the same account, whether you sign in with Google or with a password. You can add or remove a password in Settings → Account.</p>
@@ -25,7 +25,7 @@
 <li>your highlights and notes (the highlighted passage, its colour and your note), including those on imported PDF and EPUB files (the files themselves are never uploaded);</li>
 <li>your AI summaries;</li>
 <li>your news topics, categories and the RSS feed addresses you added;</li>
-<li><strong>only if you switch them on</strong> (Settings → Account → What to sync): your app settings (appearance, reader, read aloud and reminder choices, AI provider and model choices, AI tools you switched on and wrote), and your API keys, which are encrypted on your phone with your own passphrase before upload.</li>
+<li><strong>only if you switch them on</strong> (Settings → Account → What to sync): your app settings (appearance, reader, read aloud and reminder choices, AI provider and model choices, AI skills you switched on and wrote), and your API keys, which are encrypted on your phone with your own passphrase before upload.</li>
 </ul>
 <p>You can switch each kind off at any time, and delete its cloud copy with "Remove from the cloud" in the same place.</p>
 <p><strong>Never uploaded for sync:</strong> article text, downloaded pictures, imported PDF and EPUB files, and your app lock. Your settings and API keys are uploaded only if you switch those on, and your API keys only in encrypted form. Google processes this data for us as a service provider under its own <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a> and <a href="https://policies.google.com/privacy">Privacy Policy</a>. We use it only to provide sync.</p>
@@ -94,4 +94,5 @@
 
 <h2 id="contact">11. Contact</h2>
 <p>MedPro Labs · <a href="mailto:sparkshelfapp@gmail.com">sparkshelfapp@gmail.com</a></p>
+<p>Settings → About → "Report a problem" opens a draft email in your own email app with the app version, Android version, phone model and language filled in. Nothing is sent until you send it, and nothing from your library is added.</p>
 </main></body></html>

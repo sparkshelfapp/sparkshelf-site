@@ -1,0 +1,25 @@
+{
+  "10": {
+    "en": [
+      "Reader: new AI skills sheet; Summarize shows when a summary is ready",
+      "News starts empty: you pick the sources (free: 2 topics, 5 feeds each); share or import source lists",
+      "Premium: Quiz me, your own AI skills, more topics and feeds",
+      "Chat answers stream in; one AI providers page with better model and voice pickers",
+      "A welcome guide, a cleaner look, better Arabic, large-text and screen-reader support, Report a problem"
+    ],
+    "fr": [
+      "Lecteur : nouvelle feuille des compétences IA ; Résumer indique qu’un résumé est prêt",
+      "Actualités vides au départ : vous choisissez les sources (gratuit : 2 sujets, 5 flux) ; partage et import de listes",
+      "Premium : Quiz me, vos compétences IA, plus de sujets et de flux",
+      "Réponses du chat en continu ; une page Fournisseurs d’IA, meilleurs choix de modèle et de voix",
+      "Guide de bienvenue, look plus net, meilleur arabe, grands textes, lecteurs d’écran, Signaler un problème"
+    ],
+    "ar": [
+      "القارئ: ورقة مهارات الذكاء الاصطناعي الجديدة؛ وزر «تلخيص» يُظهر جاهزية الملخص",
+      "تبدأ الأخبار فارغة: تختار مصادرك (مجانًا: موضوعان و5 خلاصات لكل موضوع)؛ شارك قوائم المصادر أو استوردها",
+      "Premium: «اختبرني» ومهاراتك الخاصة، ومواضيع وخلاصات أكثر",
+      "تظهر إجابات الدردشة تدريجيًا؛ صفحة واحدة لمزوّدي الذكاء الاصطناعي مع اختيار أفضل للنماذج والأصوات",
+      "دليل ترحيبي، ومظهر أنظف، ودعم أفضل للعربية والنص الكبير وقارئات الشاشة، و«الإبلاغ عن مشكلة»"
+    ]
+  }
+}
