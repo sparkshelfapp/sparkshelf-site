@@ -1,4 +1,24 @@
 {
+  "12": {
+    "en": [
+      "Folders: file saved articles in a folder from the save panel, the article menu or the reader",
+      "The built-in AI now does everything your own key can, with a daily allowance shown as a percentage",
+      "Change the AI provider, model and voice right where you are",
+      "News sources open over News, and Back returns to where you were"
+    ],
+    "fr": [
+      "Dossiers : rangez vos articles dans un dossier depuis le panneau d’enregistrement, le menu de l’article ou le lecteur",
+      "L’IA intégrée fait tout ce que fait votre clé, avec une quantité quotidienne en pourcentage",
+      "Changez le fournisseur d’IA, le modèle et la voix sans quitter l’article",
+      "Les sources d’actualités s’ouvrent par-dessus Actualités, et Retour ramène où vous étiez"
+    ],
+    "ar": [
+      "المجلدات: ضع المقالات المحفوظة في مجلد من لوحة الحفظ أو قائمة المقال أو القارئ",
+      "يفعل الذكاء الاصطناعي المدمج كل ما يفعله مفتاحك، بحصة يومية تظهر كنسبة مئوية",
+      "غيّر مزوّد الذكاء الاصطناعي والنموذج والصوت من مكانك",
+      "تُفتح مصادر الأخبار فوق الأخبار، ويعيدك زر الرجوع إلى حيث كنت"
+    ]
+  },
   "11": {
     "en": [
       "News: the built-in AI news topic is gone; News shows only the sources you add",
