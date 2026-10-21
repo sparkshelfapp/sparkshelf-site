@@ -1,4 +1,27 @@
 {
+  "13": {
+    "en": [
+      "Refined navigation and matching reader controls",
+      "Recent AI activity ordered by tool use",
+      "Redesigned chat with streaming replies, Copy and Stop",
+      "News highlights shared with saved articles",
+      "Clipboard import prompts and automatic HTTPS"
+    ],
+    "fr": [
+      "Navigation et commandes de lecture harmonisées",
+      "Activité IA classée par utilisation des outils",
+      "Chat repensé avec réponses en continu, Copier et Arrêter",
+      "Surlignages des actualités partagés avec les articles enregistrés",
+      "Import du presse-papiers et HTTPS automatique"
+    ],
+    "ar": [
+      "تنقّل محسّن وأدوات قراءة متناسقة",
+      "نشاط الذكاء الاصطناعي مرتّب حسب استخدام الأداة",
+      "دردشة بتصميم جديد وردود متدفقة مع النسخ والإيقاف",
+      "تمييز نصوص الأخبار مشترك مع المقالات المحفوظة",
+      "استيراد روابط الحافظة وإضافة HTTPS تلقائيًا"
+    ]
+  },
   "12": {
     "en": [
       "Folders: file saved articles in a folder from the save panel, the article menu or the reader",
