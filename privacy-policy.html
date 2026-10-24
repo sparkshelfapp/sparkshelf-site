@@ -5,17 +5,17 @@
 <h1>Sparkshelf Privacy Policy</h1>
 <p class="muted">Effective 18 October 2026 · App: Sparkshelf (com.sparkshelf.app) · Published by MedPro Labs · Contact: <a href="mailto:sparkshelfapp@gmail.com">sparkshelfapp@gmail.com</a></p>
 
-<div class="box"><strong>In short.</strong> Sparkshelf keeps your reading library on your phone. If you choose to sign in, a copy of your library details is stored in your private cloud account so it can sync between your devices. Article text is sent to our server only when you use the optional built-in AI (summaries and the AI tools), or listen with the optional built-in voice, which is part of Premium (both in section 3), and never for sync. Your API keys stay on your phone; they leave it only if you switch on API key sync or add them to a backup file, and then only encrypted with a password or passphrase that only you know. Sparkshelf has no analytics, no crash-reporting service and no advertising, and we do not sell your data.</div>
+<div class="box"><strong>In short.</strong> Sparkshelf keeps your reading library on your phone. If you choose to sign in, a copy of your library details is stored in your private cloud account so it can sync between your devices. Article text is sent to our server only when you use the optional built-in AI (summaries and the AI tools), or listen with the optional built-in voice, which is part of Premium (both in section 3), and never for sync. Sparkshelf does not ask for or store API keys of other AI services. Sparkshelf has no analytics, no crash-reporting service and no advertising, and we do not sell your data.</div>
 
 <h2 id="on-device">1. What stays on your phone</h2>
 <ul>
 <li>The articles you save (link, title, the downloaded article text and pictures for offline reading), your tags, favourites, archive and read marks, reading progress, the passages you highlight and any notes you write on them, and the AI summaries you generate.</li>
 <li>Your settings (appearance, reminders, reading and voice options, app lock choice).</li>
-<li>Your API keys for AI services, if you add any. They are stored encrypted with the Android Keystore on this phone. If you choose to include them in a backup file, they are written into that file, which is then encrypted with a password you set. We never receive that file. If you switch on <strong>API key sync</strong> (Settings → Account → What to sync, off by default), your keys are first encrypted on your phone with a sync passphrase that you choose, and only that encrypted data is stored in your cloud account; we and Google cannot read it, and we cannot recover the passphrase for you.</li>
+<li>Each account you sign in with, and use without an account, has its own library on the phone. One never opens or syncs into another; signing in with a different account opens that account's library.</li>
 <li>PDF and EPUB files you import. They are copied into the app's private storage on your phone; they and their text are never uploaded or synced.</li>
 <li>Results from the AI workspaces (insights, fact-checks and chats about an article or document). These are stored on your phone and are not synced by us (Android's own device backup may include them). An insight you choose to save as a note is kept like your other highlights.</li>
 </ul>
-<p>This data is deleted when you uninstall the app or clear its data. Android's automatic backup is configured to exclude your API keys, your sign-in and sync state, the app lock and the Obsidian folder.</p>
+<p>This data is deleted when you uninstall the app or clear its data. Android's automatic backup is configured to exclude your sign-in and sync state, the app lock and the Obsidian folder.</p>
 
 <h2 id="account">2. If you sign in (optional)</h2>
 <p>Signing in is optional for saving and reading articles. It is required for cloud sync, the optional built-in AI and the optional built-in voice. We use <strong>Google Sign-In or email and password through Firebase Authentication</strong> (Google LLC). With Google we receive your account's name, email address, a unique account ID and your profile-picture address. The picture is loaded from Google each time it is shown and is not stored by us. With email and password we receive your email address and a unique account ID; your <strong>password is handled only by Firebase Authentication, which stores it in hashed form. We never see or store it</strong>, and it is never written to the app's logs or backups. A new email account must confirm its address through a link we send before it can sync, and the same email address is always the same account, whether you sign in with Google or with a password. You can add or remove a password in Settings → Account.</p>
@@ -25,22 +25,16 @@
 <li>your highlights and notes (the highlighted passage, its colour and your note), including those on imported PDF and EPUB files (the files themselves are never uploaded);</li>
 <li>your AI summaries;</li>
 <li>your news topics, categories and the RSS feed addresses you added;</li>
-<li><strong>only if you switch them on</strong> (Settings → Account → What to sync): your app settings (appearance, reader, read aloud and reminder choices, AI provider and model choices, AI skills you switched on and wrote), and your API keys, which are encrypted on your phone with your own passphrase before upload.</li>
+<li><strong>only if you switch them on</strong> (Settings → Account → What to sync): your app settings (appearance, reader, read aloud and reminder choices, AI skills you switched on and wrote).</li>
 </ul>
 <p>You can switch each kind off at any time, and delete its cloud copy with "Remove from the cloud" in the same place.</p>
-<p><strong>Never uploaded for sync:</strong> article text, downloaded pictures, imported PDF and EPUB files, and your app lock. Your settings and API keys are uploaded only if you switch those on, and your API keys only in encrypted form. Google processes this data for us as a service provider under its own <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a> and <a href="https://policies.google.com/privacy">Privacy Policy</a>. We use it only to provide sync.</p>
+<p><strong>Never uploaded for sync:</strong> article text, downloaded pictures, imported PDF and EPUB files, and your app lock. Your settings are uploaded only if you switch them on. Google processes this data for us as a service provider under its own <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a> and <a href="https://policies.google.com/privacy">Privacy Policy</a>. We use it only to provide sync.</p>
 
-<h2 id="services">3. Services you connect yourself</h2>
-<p>Some features send content to a third-party service that <strong>you</strong> choose, <strong>only when you use them</strong> and <strong>only with an API key you enter yourself</strong>. This content goes <strong>directly from your phone to that provider. It is not sent to us, and we never receive, see or store it.</strong> (The optional built-in AI and built-in voice below are the exceptions.)</p>
-<table>
-<tr><th>Feature</th><th>What is sent</th><th>Sent to (the provider you choose, not to us)</th></tr>
-<tr><td>Summarize</td><td>The article's title and text</td><td>The provider you pick: Anthropic, OpenAI, Google (Gemini), or a compatible service whose address you enter</td></tr>
-<tr><td>AI workspaces (insights, fact-check, chat with a document)</td><td>The title, the passages of the article or document selected for the request, your question and the earlier messages of that chat</td><td>The provider you pick (the same list as Summarize)</td></tr>
-<tr><td>Read aloud with a cloud voice</td><td>The text being read</td><td>Google (Gemini), OpenAI or ElevenLabs, whichever voice you choose</td></tr>
-</table>
-<p>If you switch on web search for a fact-check, the provider you chose may search the web to answer. When Google Search suggestions are shown, they are loaded from Google, which can see your IP address.</p>
+<h2 id="services">3. AI features</h2>
+<p>The AI features (summaries, the AI tools and listening with a natural voice) use Sparkshelf's own built-in AI and built-in voice, described below. Both are optional, and they send content to our server only when you use them. Using a key of your own with another AI service is not available in this version.</p>
+<p>If you switch on web search for a fact-check (Premium), Google Search may be used to answer. When Google Search suggestions are shown, they are loaded from Google, which can see your IP address.</p>
 <h3 id="builtin">The built-in AI (optional, needs sign-in)</h3>
-<p>Instead of your own key you can use Sparkshelf's built-in AI for summaries and for the AI tools (key ideas, fact check, chat, the ready-made tools and the ones you write yourself), up to a daily allowance counted in tokens (a larger one with Premium). It is off until you agree to it the first time you use it, and you can switch back to your own key in Settings at any time.</p>
+<p>You can use Sparkshelf's built-in AI for summaries and for the AI tools (key ideas, fact check, chat, the ready-made tools and the ones you write yourself), up to a daily allowance counted in tokens (a larger one with Premium). It is off until you agree to it the first time you use it, and you can stop using it at any time.</p>
 <ul>
 <li><strong>What is sent:</strong> when you use it, the article's title and text (up to about 60,000 characters for a summary; the passages of the article selected for an AI tool, your question and the earlier messages of that chat) are sent over an encrypted connection to a Sparkshelf server function on Google Cloud (United States). It passes them to Google's Gemini model, also on Google Cloud, which writes the answer, and the answer is returned to your phone. With Premium, a fact check can also let Gemini search the web with Google Search.</li>
 <li><strong>What we keep:</strong> our AI server function does not persist the article text or summary; it processes them in memory to answer your request. The returned summary is saved on your phone and can be synced to your private cloud account as described in section 2. We keep a counter per account for the day (your account ID, the date and how many tokens, and for Premium how many web searches, you used) to apply the daily allowance. Our server logs record a shortened, scrambled form of your account id, the size of the text and the counts, never the text itself. Counters are deleted when you delete your account.</li>
@@ -49,7 +43,7 @@
 <li><strong>Genuine-app check:</strong> to make sure a request comes from the real app installed from Google Play, the app asks Google Play (Play Integrity) for a token and sends it with the request. Google receives app and device integrity information for that purpose, under its own privacy policy.</li>
 </ul>
 <h3 id="builtin-voice">The built-in voice (optional, Premium, needs sign-in)</h3>
-<p>Instead of your own key you can listen with Sparkshelf's built-in voice, included with Premium up to a monthly allowance of listening time. It is off until you agree to it the first time you choose it, and you can go back to the phone's own voice, or a voice with your own key, in Settings at any time.</p>
+<p>You can listen with Sparkshelf's built-in voice, included with Premium up to a monthly allowance of listening time. It is off until you agree to it the first time you choose it, and you can go back to the phone's own voice in Settings at any time.</p>
 <ul>
 <li><strong>What is sent:</strong> while you listen, the text being read is sent in pieces of up to about 1,200 characters over an encrypted connection to a Sparkshelf server function on Google Cloud (United States). It passes each piece to Google's speech model, also on Google Cloud, which turns it into audio, and the audio is returned to your phone. The audio is kept on your phone so replaying it needs no new request, and you can clear it in Settings.</li>
 <li><strong>What we keep:</strong> our server function does not keep the text or the audio; it handles them in memory to answer your request. For each account we keep a counter for the month (your account ID, the month and how many characters were read to you) to apply the monthly allowance, and your Premium status (whether your subscription is active and when the paid period ends, plus a scrambled reference to the purchase so that one subscription cannot unlock several accounts). Our server logs record a shortened, scrambled form of your account id, the size of the text and the counts, never the text itself. All of this is deleted when you delete your account.</li>
@@ -57,7 +51,7 @@
 <li><strong>Why sign-in and Premium:</strong> they let us apply the allowance to each person and only to subscribers. Your sign-in account is used only for that.</li>
 <li><strong>Genuine-app check:</strong> as for the built-in AI, the app sends a Play Integrity token with each request.</li>
 </ul>
-<p>Your key and the content go only to that provider. The provider's own terms and privacy policy apply, and you may be billed by them for your usage. The phone's own voice works entirely on the phone. The "Ask Gemini" shortcut hands the article text to the Gemini app installed on your phone, which is then governed by Google's terms. You can remove a key at any time in Settings.</p>
+<p>The phone's own voice works entirely on the phone. The "Ask Gemini" shortcut hands the article text to the Gemini app installed on your phone, which is then governed by Google's terms.</p>
 
 <h2 id="web">4. Websites and feeds the app contacts</h2>
 <ul>
@@ -87,9 +81,9 @@
 
 <h2 id="deletion">7. Your choices, access and deletion</h2>
 <ul>
-<li><strong>Delete your account and cloud data:</strong> Settings → Account → "Delete my account and cloud data". This removes everything stored in the cloud for you and deletes your sign-in account. Your articles remain on the phone. You can also request deletion by email (see <a href="delete-account.html">Delete your account</a>).</li>
-<li><strong>Export:</strong> Settings → Import &amp; backup → "Export a backup" saves a file with the parts you choose: your library details and tags, highlights, notes, summaries, settings, reading stats and, only if you tick it, your API keys (which requires a password that encrypts the whole file) you control.</li>
-<li><strong>Sign out</strong> at any time; your phone keeps its local copy.</li>
+<li><strong>Delete your account and cloud data:</strong> Settings → Account → "Delete my account and cloud data". This removes everything stored in the cloud for you and deletes your sign-in account. The library of that account is removed from the phone as well. You can also request deletion by email (see <a href="delete-account.html">Delete your account</a>).</li>
+<li><strong>Export:</strong> Settings → Import &amp; backup → "Export a backup" saves a file with the parts you choose: your library details and tags, highlights, notes, summaries, settings, reading stats you control. You can protect the file with a password.</li>
+<li><strong>Sign out</strong> at any time; your phone keeps that account's library for the next time you sign in, or you can choose to remove it from the phone when you sign out.</li>
 <li>Depending on where you live (for example under the EU/UK GDPR or California law) you may have rights to access, correct, delete or port your data, and to object or complain to a regulator. Use the in-app tools above or contact us.</li>
 </ul>
 <p>We keep cloud data only while your account exists. Deleting your account is immediate and permanent: we cannot restore it afterwards. Google may take some further time to purge residual copies from its own backup systems under its standard deletion schedule; they are not accessible to us or to the app.</p>
@@ -98,7 +92,7 @@
 <p>Sparkshelf is not directed at children under 13 (or the higher age required in your country), and we do not knowingly collect their personal information.</p>
 
 <h2 id="security">9. Security</h2>
-<p>Connections use HTTPS wherever the site supports it. Cloud data is protected by account-based access rules so each user can reach only their own space, and API keys are encrypted on the device. No system is perfectly secure, so please keep your phone and Google account protected.</p>
+<p>Connections use HTTPS wherever the site supports it. Cloud data is protected by account-based access rules so each user can reach only their own space. No system is perfectly secure, so please keep your phone and Google account protected.</p>
 
 <h2 id="changes">10. Changes</h2>
 <p>If we change this policy, we will update the date above and, for significant changes, tell you in the app.</p>
