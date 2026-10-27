@@ -8,3 +8,8 @@ p, li { color:var(--fg); } .muted { color:var(--muted); font-size:.95rem; }
 a { color:var(--accent); } ul { padding-left:1.25rem; } li { margin:.3rem 0; }
 .box { border:1px solid var(--line); border-radius:12px; padding:1rem 1.1rem; margin:1rem 0; }
 table { border-collapse:collapse; width:100%; margin:.5rem 0; font-size:.95rem; } th, td { text-align:left; vertical-align:top; padding:.5rem .6rem; border-bottom:1px solid var(--line); }
+.welcome img.banner { display:block; width:100%; height:auto; border-radius:16px; margin:0 0 1.5rem; }
+.welcome .lead { font-size:1.1rem; color:var(--muted); }
+.welcome blockquote { margin:2.2rem 0 0; padding:.2rem 1.1rem; border-inline-start:4px solid var(--accent); background:color-mix(in srgb, var(--accent) 8%, transparent); border-radius:0 12px 12px 0; }
+[dir="rtl"] .welcome blockquote { border-radius:12px 0 0 12px; }
+[dir="rtl"] th, [dir="rtl"] td { text-align:right; }
