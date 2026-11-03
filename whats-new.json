@@ -1,4 +1,59 @@
 {
+  "16": {
+    "en": [
+      "Meet Sparky: a Premium assistant that recaps your news and finds sources",
+      "3-day free trial for Premium",
+      "A quicker setup, and Try it yourself to explore the features",
+      "Pick interests and get ready-made news feeds",
+      "Use your own Gemini key for free; other keys with Premium",
+      "Shorter summaries, and a separate history for AI skills with delete"
+    ],
+    "fr": [
+      "Découvrez Sparky : un assistant Premium qui résume l’actualité et trouve des sources",
+      "Essai gratuit de 3 jours pour Premium",
+      "Une configuration plus rapide et « Essayer par vous-même » pour explorer les fonctions",
+      "Choisissez vos centres d’intérêt et obtenez des flux d’actualités prêts à l’emploi",
+      "Utilisez gratuitement votre propre clé Gemini ; les autres clés avec Premium",
+      "Résumés plus courts, et un historique séparé des compétences IA avec suppression"
+    ],
+    "ar": [
+      "تعرّف على سباركي: مساعد ضمن Premium يلخّص أخبارك ويجد المصادر",
+      "تجربة مجانية لمدة 3 أيام لـ Premium",
+      "إعداد أسرع و«جرّبها بنفسك» لاستكشاف الميزات",
+      "اختر اهتماماتك واحصل على مصادر أخبار جاهزة",
+      "استخدم مفتاح Gemini الخاص بك مجانًا، والمفاتيح الأخرى مع Premium",
+      "ملخصات أقصر وسجل منفصل لمهارات الذكاء الاصطناعي مع إمكانية الحذف"
+    ]
+  },
+  "14": {
+    "en": [
+      "Redesigned News with feed filters and pictures",
+      "A picture banner above every article",
+      "Better AI skills and a full-screen chat",
+      "Save confirmation with Folder and Tag shortcuts",
+      "Swipe actions in Saved",
+      "Each account now has its own library on the phone",
+      "Own API keys: coming soon"
+    ],
+    "fr": [
+      "Actualités repensées, avec filtres de flux et images",
+      "Une bannière d’image au-dessus de chaque article",
+      "Compétences IA améliorées et chat en plein écran",
+      "Confirmation d’enregistrement avec raccourcis Dossier et Étiquette",
+      "Actions par balayage dans Enregistrés",
+      "Chaque compte a désormais sa propre bibliothèque sur le téléphone",
+      "Clés API personnelles : bientôt disponibles"
+    ],
+    "ar": [
+      "أخبار بتصميم جديد مع مرشّحات للمصادر وصور",
+      "صورة في أعلى كل مقال",
+      "مهارات ذكاء اصطناعي أفضل ودردشة بملء الشاشة",
+      "تأكيد الحفظ مع اختصارات المجلد والوسم",
+      "إجراءات بالسحب في المحفوظات",
+      "لكل حساب الآن مكتبته الخاصة على الهاتف",
+      "مفاتيح API الخاصة: قريبًا"
+    ]
+  },
   "13": {
     "en": [
       "Refined navigation and matching reader controls",
@@ -59,21 +114,21 @@
   "10": {
     "en": [
       "News: slimmer header; Top stories loop",
-      "News starts empty: you pick the sources (free: 2 topics, 5 feeds each); share or import source lists",
+      "News starts empty: you pick the sources (free: 5 topics, 5 feeds each); share or import source lists",
       "Premium: a natural built-in voice for read aloud, Quiz me, your own AI skills, more topics and feeds",
       "Reader: new AI skills sheet; chat answers stream in; one AI providers page",
       "A welcome guide, better Arabic, large-text and screen-reader support, Report a problem"
     ],
     "fr": [
       "Actualités : en-tête plus fin ; À la une en boucle",
-      "Actualités vides au départ : choisissez vos sources (gratuit : 2 sujets, 5 flux) ; partage et import de listes",
+      "Actualités vides au départ : choisissez vos sources (gratuit : 5 sujets, 5 flux) ; partage et import de listes",
       "Premium : voix intégrée naturelle, Quiz me, vos compétences IA, plus de sujets et de flux",
       "Lecteur : nouvelle feuille des compétences IA ; chat en continu ; une page Fournisseurs d’IA",
       "Guide de bienvenue, meilleur arabe, grands textes, Signaler un problème"
     ],
     "ar": [
       "الأخبار: ترويسة أنحف؛ «أبرز الأخبار» في حلقة",
-      "تبدأ الأخبار فارغة: تختار مصادرك (مجانًا: موضوعان و5 خلاصات لكل موضوع)؛ شارك قوائم المصادر أو استوردها",
+      "تبدأ الأخبار فارغة: تختار مصادرك (مجانًا: 5 مواضيع و5 خلاصات لكل موضوع)؛ شارك قوائم المصادر أو استوردها",
       "Premium: صوت مدمج طبيعي للقراءة بصوت عالٍ، و«اختبرني» ومهاراتك الخاصة، ومواضيع وخلاصات أكثر",
       "القارئ: ورقة مهارات الذكاء الاصطناعي؛ تظهر إجابات الدردشة تدريجيًا؛ صفحة واحدة لمزوّدي الذكاء الاصطناعي",
       "دليل ترحيبي، ودعم أفضل للعربية والنص الكبير وقارئات الشاشة، و«الإبلاغ عن مشكلة»"
